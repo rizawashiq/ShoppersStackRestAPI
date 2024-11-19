@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.shopperstack.carts.UpdateFromCart">
+        <methods>
+          <include name="bf"/>
+          <include name="updatePRodFromCartTest"/>
+        </methods>
+      </class> <!-- com.shopperstack.carts.UpdateFromCart -->
+      <class name="com.shopperstack.orders.PostOrder">
+        <methods>
+          <include name="postOrderTest"/>
+          <include name="bf"/>
+        </methods>
+      </class> <!-- com.shopperstack.orders.PostOrder -->
+      <class name="com.shopperstack.carts.AddToCart">
+        <methods>
+          <include name="addPRodToCartTest"/>
+          <include name="bf"/>
+        </methods>
+      </class> <!-- com.shopperstack.carts.AddToCart -->
+      <class name="com.shopperstack.orders.GetInvoice">
+        <methods>
+          <include name="bf"/>
+          <include name="getOrderInvoiceTest"/>
+        </methods>
+      </class> <!-- com.shopperstack.orders.GetInvoice -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
